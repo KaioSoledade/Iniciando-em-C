@@ -2,12 +2,12 @@
 
 int main() {
     printf("******************************************\n");
-    printf("* Bem vindo ao nosso jogo de adivinhação *\n");
+    printf("* Bem vindo ao nosso jogo de adivinhacao *\n");
     printf("******************************************\n");
 
     int numerosecreto = 42;
 
-    printf("o numero %d é numero secreto, não diga a ninguem\n", numerosecreto);
+    printf("o numero %d e numero secreto\n", numerosecreto);
 
     int chute;
     printf("Tente adivinhar o numero");
@@ -18,7 +18,19 @@ int main() {
         printf("Parabens, Voce acertou\r");
     }
     else{
-        printf("Voce errou\r");
-        printf("Tente Novamente\r");
+        if (chute > numerosecreto)
+        {
+            printf("Voce errou\r");
+            printf("O numero secreto é MENOR\r");
+            printf("Tente Novamente\r");
+        }
+            if (chute < numerosecreto)
+        {
+            printf("Voce errou\r");
+            printf("O numero secreto e MAIOR\r");
+            printf("Tente Novamente\r");
+        }
+        
+
     };
 };
