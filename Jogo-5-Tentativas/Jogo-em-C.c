@@ -16,7 +16,7 @@ for (int i = 1; i <= NUMERO_DE_TENTATIVAS; i++) {
         scanf("%d", &chute);
         
         if(chute < 0){
-            printf("Seu chute não vale como uam tentativa");
+            printf("Seu chute nao vale como uma tentativa\n");
             i--;
             continue;
         }
