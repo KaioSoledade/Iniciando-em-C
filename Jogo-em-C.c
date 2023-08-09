@@ -15,8 +15,15 @@ for (int i = 1; i <= NUMERO_DE_TENTATIVAS; i++) {
 
         scanf("%d", &chute);
         
+        if(chute < 0){
+            printf("Seu chute não vale como uam tentativa");
+            i--;
+            continue;
+        }
+
         int acertou = (chute == numerosecreto);
         int maior = (chute > numerosecreto);
+
 
         if(acertou) {
             printf("Parabens, Voce acertou\n");
@@ -27,7 +34,7 @@ for (int i = 1; i <= NUMERO_DE_TENTATIVAS; i++) {
 
         } else{
             printf("Seu chute foi MENOR, Tente Novamente\n");
-            
+
         }
     };
 };
