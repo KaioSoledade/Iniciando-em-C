@@ -40,5 +40,6 @@ int main() {
     };
     
     printf("Voce usou %d tentativas\n", tentativa);
+    printf("FIM DE JOGO");
 
 };

@@ -37,4 +37,6 @@ for (int i = 1; i <= NUMERO_DE_TENTATIVAS; i++) {
 
         }
     };
+    printf("FIM DE JOGO");
+
 };
