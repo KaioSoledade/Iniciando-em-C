@@ -7,6 +7,8 @@ int main() {
     int numerosecreto = 42;
     int chute;
     int tentativa = 1;
+    int pontos = 1000;
+
 
     while(1){
         printf("-----------------------------------\n");
@@ -37,9 +39,12 @@ int main() {
         }
 
         tentativa++;
+        int pontosperdidos = (chute - numerosecreto) / 2;
+        pontos = pontos - pontosperdidos;
     };
-    
+    printf("-----------------------------------\n");
     printf("Voce usou %d tentativas\n", tentativa);
-    printf("FIM DE JOGO");
+    printf("FIM DE JOGO\n");
+    printf("Pontuacao: %d\n", pontos);
 
 };
