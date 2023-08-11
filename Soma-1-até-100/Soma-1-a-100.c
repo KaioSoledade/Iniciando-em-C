@@ -6,5 +6,5 @@ int main() {
     soma = soma + i;
   }
 
-  printf("A soma eh %d", soma);
-}
+  printf("A soma e: %d", soma);
+};

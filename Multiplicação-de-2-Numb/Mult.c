@@ -3,14 +3,14 @@
 int main(){
 
 int Numb1;
-scanf("%d", &Numb1 );
+scanf("Numero 1 :%d", &Numb1 );
 
 int Numb2;
-scanf("%d", &Numb2 );
+scanf("Numero 2 :%d", &Numb2 );
 
 int Multp = (Numb1 * Numb2);
 
-printf(" O resultado da multiplicação de %d e %d é : %d", Numb1, Numb2, Multp);
+printf(" O resultado da multiplicacao de %d e %d : %d", Numb1, Numb2, Multp);
 };
 
  
