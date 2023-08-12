@@ -2,8 +2,6 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define NUMERO_DE_TENTATIVAS 5
-
 int main() {
     printf("******************************************\n");
     printf("* Bem vindo ao nosso jogo de adivinhacao *\n");
@@ -20,9 +18,29 @@ int main() {
     int chute;
     printf("%d\n", numerosecreto);
 
-for (int i = 1; i <= NUMERO_DE_TENTATIVAS; i++) {
+    int nivel;
+    int tentativas;
+    printf("Escolha um Nivel\n");
+    printf("(1)Facil  (2)Medio  (3)Dificil\n");
+    scanf("%d", &nivel);
+
+    switch(nivel) {
+        case 1:
+        tentativas = 15;
+        break;
+        
+        case 2:
+        tentativas = 10;
+        break;
+        
+        default:
+        tentativas = 6;
+        break;
+    };
+
+for (int i = 1; i <= tentativas; i++) {
         printf("-----------------------------------\n");
-        printf("Tentativa %d de %d\n", i, NUMERO_DE_TENTATIVAS);
+        printf("Tentativa %d de %d\n", i, tentativas);
         printf("Qual o seu chute?\n");
 
         scanf("%d", &chute);

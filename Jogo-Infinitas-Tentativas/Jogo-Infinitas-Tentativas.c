@@ -12,14 +12,15 @@ int main() {
     int tentativa = 1;
     double pontos = 1000;
 
+
     int segundos = time(0);
     srand(segundos);
 
     int numerobruto = rand();
     numerosecreto = numerobruto % 100;
     
-
-
+    int nivel;
+     
     while(1){
         printf("-----------------------------------\n");
         printf("Tentativa %d\n", tentativa);
