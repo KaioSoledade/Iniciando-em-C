@@ -84,3 +84,90 @@ int main() {
 **Conclusão:**
 
 O caractere especial "\n" é fundamental para manipular novas linhas em programas C. Seja para formatar a saída no console, criar strings com várias linhas ou organizar o código-fonte, o uso adequado do "\n" torna os programas C mais legíveis e amigáveis. Lembre-se de considerar as exceções ao utilizar o "\n" em algumas funções de entrada para evitar comportamentos inesperados em seus programas.
+
+## Tema `abs()`
+
+**Usando a Função `abs()` na Linguagem C**
+
+A linguagem de programação C oferece uma variedade de funções integradas para auxiliar os desenvolvedores a realizar operações matemáticas e manipulações de dados. Uma dessas funções é a `abs()`, que é utilizada para calcular o valor absoluto de um número inteiro. O valor absoluto de um número é a distância desse número até o zero, independentemente de ele ser positivo ou negativo. Neste documento, exploraremos como usar a função `abs()` em seus programas C.
+
+**Sintaxe da Função `abs()`**
+
+A sintaxe básica da função `abs()` é a seguinte:
+
+```c
+#include <stdlib.h>
+
+int abs(int x);
+```
+
+- A função `abs()` é declarada no cabeçalho `<stdlib.h>`, portanto, você deve incluir esse cabeçalho no início do seu programa usando a diretiva `#include`.
+
+- A função recebe um argumento inteiro `x` e retorna o valor absoluto desse argumento como um inteiro.
+
+**Exemplos de Uso**
+
+Vamos ver alguns exemplos de como usar a função `abs()` em programas C:
+
+**Exemplo 1: Valor Absoluto de um Número Inteiro Positivo**
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int num = 10;
+    int absNum = abs(num);
+    
+    printf("O valor absoluto de %d é %d\n", num, absNum);
+    
+    return 0;
+}
+```
+
+**Exemplo 2: Valor Absoluto de um Número Inteiro Negativo**
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int num = -15;
+    int absNum = abs(num);
+    
+    printf("O valor absoluto de %d é %d\n", num, absNum);
+    
+    return 0;
+}
+```
+
+**Exemplo 3: Usando o Valor Absoluto em Cálculos**
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int a = 25;
+    int b = -30;
+    
+    int diff = abs(a - b);
+    
+    printf("A diferença absoluta entre %d e %d é %d\n", a, b, diff);
+    
+    return 0;
+}
+```
+
+**Considerações Finais**
+
+A função `abs()` é uma ferramenta útil para calcular o valor absoluto de números inteiros em programas C. Ela pode ser aplicada em várias situações, como cálculos de distância, manipulação de valores negativos e muito mais. Lembre-se de incluir o cabeçalho `<stdlib.h>` no seu programa para ter acesso à definição da função `abs()`. Com esse conhecimento, você poderá realizar operações matemáticas mais precisas e flexíveis em seus programas C.
+
+## Tema ``
+## Tema ``
+## Tema ``
+## Tema ``
+## Tema ``
+## Tema ``
+## Tema ``
+## Tema ``
